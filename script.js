@@ -18,6 +18,19 @@ filterButtons.forEach(function (btn) {
 
 function renderCards(activeFilter) {
 
+  let numOfJobs = document.getElementById('num-of-jobs')
+  if(activeFilter === "interview")
+  {
+     numOfJobs.innerText = document.getElementById('interview-count').innerText
+  }
+  else if(activeFilter === 'rejected')
+  {
+      numOfJobs.innerText = document.getElementById('rejected-count').innerText
+  }
+  else 
+  {
+     numOfJobs.innerText = document.getElementById('total-jobs').innerText
+  }
   const allCards = document.querySelectorAll(".card");
   let visibleCount = 0;
 
