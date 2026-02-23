@@ -10,7 +10,9 @@ querySelectorAll: Similar to querySelector, but it returns a static NodeList of 
 
 2. How do you create and insert a new element into the DOM?
 
-Ans: We use document.createElement('tagName') to create a new element.Then we use classList.add to insert the element.
+Ans: We use document.createElement('tagName') to create a new element.Then we use tagName.innerText to set a innertext in the element.We insert this element in a parent by using appendChild().
+
+3. What is Event Bubbling? And how does it work?
 
 
 
